@@ -335,8 +335,8 @@
           </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
-            <Optim>1</Optim>
-            <oTime>0</oTime>
+            <Optim>2</Optim>
+            <oTime>1</oTime>
             <SplitLS>0</SplitLS>
             <OneElfS>0</OneElfS>
             <Strict>0</Strict>
@@ -349,7 +349,7 @@
             <uSurpInc>0</uSurpInc>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>STM32F40XX,USE_STDPERIPH_DRIVER</Define>
+              <Define>STM32F40XX,USE_STDPERIPH_DRIVER,USE_FULL_ASSERT</Define>
               <Undefine></Undefine>
               <IncludePath>..\Libraries\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm;..\Libraries\CMSIS\Device\ST\STM32F4xx\Include;..\Libraries\STM32F4xx_StdPeriph_Driver\inc;..\BSP;..\OS;..\User</IncludePath>
             </VariousControls>
@@ -469,6 +469,13 @@
         </Group>
         <Group>
           <GroupName>Doc</GroupName>
+          <Files>
+            <File>
+              <FileName>README.md</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\README.md</FilePath>
+            </File>
+          </Files>
         </Group>
       </Groups>
     </Target>
